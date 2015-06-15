@@ -1,5 +1,5 @@
 //
-// Small Express file to server the index.html file.
+// Small Express server to serve the index.html file.
 //
 
 var express = require('express'),

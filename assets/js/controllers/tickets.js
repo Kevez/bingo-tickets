@@ -75,17 +75,15 @@ app.Tickets = (function () {
 
     };
 
-    Tickets.prototype.markNumber = function () {
+    Tickets.prototype.markNumber = function (nextNumberToCall) {
 
         if (this.numbersToCall.length === 0) {
             this.endGame();
         }
 
         // Get the first value from the numbers to call array, then remove it so it can't be called again.
-        var nextNumberToCall = this.numbersToCall.shift(),
-            ticketId = parseInt(document.querySelector('.ticket--cell-' + nextNumberToCall).parentNode.parentNode.getAttribute('id').split('-')[1], 10),
+        var ticketId = parseInt(document.querySelector('.ticket--cell-' + nextNumberToCall).parentNode.parentNode.getAttribute('id').split('-')[1], 10),
             numToGoElem = document.getElementById('ticket-' + ticketId).getElementsByClassName('num-to-go')[0];
-
         document.querySelector('.ticket--cell-' + nextNumberToCall).className = document.querySelector('.ticket--cell-' + nextNumberToCall).className + ' marked';
 
         // update numbers to go on ticket model
@@ -119,7 +117,7 @@ app.Tickets = (function () {
         this.showTickets();
 
         this.gameTick = setInterval(function () {
-            that.markNumber();
+            that.markNumber(that.numbersToCall.shift());
         }, this.markOffSpeed);
     };
 
