@@ -22,7 +22,6 @@ app.Tickets = (function () {
 
         this.shuffleNumbersArray(this.populateNumbersArray());
         this.parseString();
-        this.showTickets();
     };
 
     Tickets.prototype.populateNumbersArray = function () {
@@ -116,6 +115,8 @@ app.Tickets = (function () {
 
         // Anything inside the setInterval function will look at the window object so let's store a reference to the Tickets controller here.
         var that = this;
+
+        this.showTickets();
 
         this.gameTick = setInterval(function () {
             that.markNumber();

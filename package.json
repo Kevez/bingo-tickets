@@ -1,9 +1,10 @@
 {
-	"name": "bingo-cards",
-	"description": "",
-	"dependencies": {
-		"express": "~4.0.0",
-		"gulp": "~3.9.0",
-		"gulp-jslint": "~0.2.2"
-	}
+  "name": "bingo-tickets",
+  "description": "",
+  "dependencies": {
+    "express": "~4.0.0",
+    "gulp": "~3.9.0",
+    "gulp-jslint": "~0.2.2",
+    "jasmine-core": "^2.3.4"
+  }
 }
