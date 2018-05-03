@@ -1,7 +1,7 @@
 # Bingo Tickets
 
 ## About
-A set of bingo tickets.
+A set of bingo tickets that I had to create as part of a technical test.
 
 ## Tech stack
 - JavaScript (vanilla)
