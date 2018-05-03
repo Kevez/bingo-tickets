@@ -1,5 +1,13 @@
 # Bingo Tickets
 
+## About
+A set of bingo tickets.
+
+## Tech stack
+- JavaScript (vanilla)
+- HTML5
+- CSS
+
 ## Clone repo
 
 ```
