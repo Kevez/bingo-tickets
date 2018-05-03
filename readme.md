@@ -7,6 +7,7 @@ A set of bingo tickets.
 - JavaScript (vanilla)
 - HTML5
 - CSS
+- Express
 
 ## Clone repo
 
